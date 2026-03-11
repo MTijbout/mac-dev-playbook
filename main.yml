@@ -4,7 +4,7 @@
 
   vars_files:
     - default.config.yml
-
+  
   pre_tasks:
     - name: Include playbook configuration.
       include_vars: "{{ item }}"
