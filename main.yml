@@ -46,6 +46,10 @@
       when: configure_sublime
       tags: ['sublime-text']
 
+    - import_tasks: tasks/dockutils.yml
+      when: dockutils_check
+      tags: ['dock', 'dockutils']
+
     - name: Run post-provision task files in a block.
       tags: ['post']
       block:

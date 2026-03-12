@@ -4,10 +4,11 @@ configure_terminal: false
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
+configure_dock: true
+dockitems_remove:
+  - TV
+  - Notes
 # - Launchpad
-# - TV
 # - Podcasts
 # - 'App Store'
 dockitems_persist: []
@@ -22,9 +23,11 @@ sudoers_custom_config: ""
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
+dockutils_check: true
+
 dotfiles_repo: https://github.com/MTijbout/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Documents/GitHub/dotfiles
 dotfiles_repo_version: main # Replace with your default branch
 dotfiles_files:
   - .bashrc
@@ -40,6 +43,7 @@ homebrew_installed_packages:
   - bash
   - bash-completion
   - dockdoor
+  - dockutil
   - espanso
   - gettext
   - git

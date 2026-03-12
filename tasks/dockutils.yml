@@ -1,0 +1,16 @@
+---
+# Checking DockUtils state.
+- name: Verify Current Dock Items
+  shell: "dockutil --list"
+  register: dock_list
+  check_mode: no
+  changed_when: false
+  failed_when: false
+
+- name: Display status of removed items
+  debug:
+    msg: "Confirming: {{ item }} has been removed from the Dock."
+  loop: "{{ dockitems_remove }}"
+  when: 
+    - configure_dock
+    - item not in dock_list.stdout
