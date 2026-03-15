@@ -44,7 +44,6 @@ homebrew_installed_packages:
   - bash-completion
   - dockdoor
   - dockutil
-  - espanso
   - gettext
   - git
   - gh
@@ -64,8 +63,6 @@ homebrew_installed_packages:
   - pv
   - rsync
   - wget
-  - xca
-  - yacreader
   # - autoconf
   # - doxygen
   # - gifsicle
@@ -80,11 +77,16 @@ homebrew_installed_packages:
 homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - docker
-  - dropbox
+homebrew_ca3saaa  raa][]
+  - espanso
   - google-chrome
+  - iterm2
   - licecap
+  - markedit
+  - obsidian
+  - xca
+  - yacreader
+
   # - firefox
   # - chromedriver
   # - handbrake
